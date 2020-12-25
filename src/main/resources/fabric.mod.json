@@ -1,0 +1,33 @@
+{
+   "schemaVersion": 1,
+   "id": "rpupdater",
+   "version": "${version}",
+   "name": "Resource Pack Updater",
+   "description": "checks and alerts you to resource pack updates for compatible packs (WIP)",
+   "authors": [
+      "Alexander Liu (autumnblazey)"
+   ],
+   "contact": {
+      "homepage": "https://github.com/autumnblazey/resourcepack-update-notifier/",
+      "sources": "https://github.com/autumnblazey/resourcepack-update-notifier/",
+      "issues": "https://github.com/autumnblazey/resourcepack-update-notifier/issues"
+   },
+   "license": "MIT",
+   "icon": "modicon.png",
+   "environment": "client",
+   "entrypoints": {
+      "client": [
+         "io.autumnblaze.rpupdater.ResourcepackUpdater"
+      ]
+   },
+   "mixins": [
+      "rpu.mixins.json"
+   ],
+   "depends": {
+      "fabricloader": ">=0.7.4",
+      "fabric": "*"
+   },
+   "suggests": {
+      "modmenu": "*"
+   }
+}
